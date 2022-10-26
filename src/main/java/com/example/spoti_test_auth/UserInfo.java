@@ -9,7 +9,7 @@ import java.security.Principal;
 public class UserInfo {
 
     @GetMapping("/hello")
-    public Principal get(Principal principal){
+    public Principal get(Principal principal) {
         return principal;
     }
 
