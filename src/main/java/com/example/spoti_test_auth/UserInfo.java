@@ -9,8 +9,7 @@ import java.security.Principal;
 public class UserInfo {
 
     @GetMapping("/user")
-    public Principal getuser (Principal principal){
-        System.out.println("User");
+    public Principal getuser(Principal principal) {
         return principal;
     }
 
