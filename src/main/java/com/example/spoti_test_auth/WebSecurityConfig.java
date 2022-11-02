@@ -13,5 +13,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(HttpSecurity httpSecurity) throws Exception {
 
         httpSecurity.authorizeHttpRequests().antMatchers("/hello").authenticated();
+        httpSecurity.authorizeHttpRequests().antMatchers("/album/*").authenticated();
     }
 }

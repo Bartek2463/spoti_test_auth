@@ -1,5 +1,5 @@
 
-package com.example.spoti_test_auth.model;
+package model;
 
 import java.util.HashMap;
 import java.util.List;
@@ -27,8 +27,7 @@ public class Artists {
 
     @JsonProperty("href")
     private String href;
-    @JsonProperty("items")
-    private List<Item> items = null;
+
     @JsonProperty("limit")
     private Integer limit;
     @JsonProperty("next")
@@ -52,15 +51,7 @@ public class Artists {
         this.href = href;
     }
 
-    @JsonProperty("items")
-    public List<Item> getItems() {
-        return items;
-    }
 
-    @JsonProperty("items")
-    public void setItems(List<Item> items) {
-        this.items = items;
-    }
 
     @JsonProperty("limit")
     public Integer getLimit() {
